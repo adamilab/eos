@@ -272,7 +272,7 @@ int main(int argc, char *argv[])
         {
             ++i;
             
-            confusionMultiplier = atoi(argv[i]);
+            confusionMultiplier = atof(argv[i]);
         }
     }
     

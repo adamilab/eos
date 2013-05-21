@@ -1,6 +1,6 @@
 This is Evolution of Swarming project.
 
-Copyright 2012 Randal S. Olson, Arend Hintze.
+Copyright 2013 Randal S. Olson, Arend Hintze.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -18,18 +18,20 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 Compiling
 ====================
 
-Enter the command ./build_abeeda
+Enter the command ./build_eos
 
 If the console gives an error about permissions, enter:
 
-chmod 755 build_abeeda
+chmod 755 build_eos
 
 then enter the above build command again.
 
 Usage
 ====================
 
-Type ./abeeda to run the simulation. The following parameters can be passed to aBeeDa:
+Type ./eos to run the simulation. Note that by default, EOS attempts to seed the predator population with a Markov Network genome saved in a file called, `startPredator.genome`.
+
+The following parameters can be passed to EOS:
 
 * -e [LOD out file name] [prey genome out file name] [predator genome out file name]: evolve
 * -d [prey genome in file name] [predator genome in file name]: display 
@@ -46,12 +48,12 @@ Type ./abeeda to run the simulation. The following parameters can be passed to a
 * -pva [int]: set predator vision angle (default: 180)
 * -kd [int]: set predator kill attempt delay (default: 10)
 
--e, -d, -dd, -dfs, or -dfp must be passed to abeeda, otherwise it will not do anything by default.
+-e, -d, -dd, -dfs, or -dfp must be passed to EOS, otherwise it will not do anything by default.
 
 Output
 ====================
 
-aBeeDa produces a variety of output files, detailed below.
+EOS produces a variety of output files, detailed below.
 
 LOD files
 ---------------------

@@ -406,7 +406,7 @@ int main(int argc, char *argv[])
     delete predatorAgent;
     predatorAgent = new tAgent;
     //predatorAgent->setupRandomAgent(5000);
-    predatorAgent->loadAgent((char *)"startPredator.genome");
+    predatorAgent->loadAgent((char *)"../work/startPredator.genome");
     
     // make mutated copies of the start genome to fill up the initial population
 	for(int i = 0; i < populationSize; ++i)

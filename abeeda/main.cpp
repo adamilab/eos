@@ -92,7 +92,11 @@ int main(int argc, char *argv[])
     string LODFileName = "", swarmGenomeFileName = "", predatorGenomeFileName = "", inputGenomeFileName = "";
     string swarmDotFileName = "", predatorDotFileName = "", logicTableFileName = "";
     int displayDirectoryArgvIndex = 0;
-    
+    // Default files to save simulation
+    swarmGenomeFileName = "../work/EndSwarm.genome";
+    predatorGenomeFileName = "../work/EndPredator.genome";
+    LODFileName = "../work/LOD.csv";	
+	
     // initial object setup
     swarmAgents.resize(populationSize);
     predatorAgents.resize(populationSize);
